@@ -1,0 +1,42 @@
+
+.skillItems{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.skillContainer h1{
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+.cardBox{
+    text-align: center;
+    height: 20rem;
+    transition: all 0.3s ease;
+}
+.cardBox img{
+    width: 40%;
+    height: 40%;
+}
+.cardBox h3{
+    font-size: 20px;
+}
+.cardBox p{
+    font-size: 15px;
+}
+.skillCard{
+    background-color: #222;
+    color: white;
+    padding: 5% 5%;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.skillCard:hover{
+    background: crimson;
+
+}
+.skillCard:hover .cardBox{
+    transform: scale(1.05);
+}

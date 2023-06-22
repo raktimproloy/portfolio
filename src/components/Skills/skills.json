@@ -1,0 +1,43 @@
+{
+    "data":[
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252478/portfolio/icons/html_xdrs9d.svg",
+            "title": "HTML",
+            "description": "HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252470/portfolio/icons/css_xbljhm.svg",
+            "title": "CSS",
+            "description": "CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252480/portfolio/icons/javascript_tsjbnz.svg",
+            "title": "Javascript",
+            "description": "JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252483/portfolio/icons/react_o0fpvr.svg",
+            "title": "React JS",
+            "description": "React.js, more commonly known as React, is a free, open-source JavaScript library. It works best to build user interfaces."
+        },{
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252482/portfolio/icons/nextjs_tqycq2.svg",
+            "title": "Next JS",
+            "description": "Next.js is a React framework that gives you building blocks to create web applications."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252482/portfolio/icons/nodejs_slpowz.svg",
+            "title": "Node JS",
+            "description": "Node.js (Node) is an open source, cross-platform runtime environment for executing JavaScript code."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252472/portfolio/icons/express-js_owybym.svg",
+            "title": "Express JS",
+            "description": "Express is a node js web application framework that provides broad features for building web and mobile applications."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252482/portfolio/icons/mongodb_xkaoz9.svg",
+            "title": "MongoDB",
+            "description": "MongoDB is a non-relational document database that provides support for JSON-like storage."
+        }
+    ]
+}

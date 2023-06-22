@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "name": "Element Zero Lab",
+            "description":"this is market place",
+            "location": "UK",
+            "position": "Junior Frontend Developer",
+            "startTime": "2022",
+            "endTime": "2022",
+            "work": ["JAVASCRIPT", "React", "Typescript"]
+        }
+    ]
+}

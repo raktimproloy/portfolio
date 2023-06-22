@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1687186694/portfolio/icons/coding_o3zwrx.svg",
+            "title": "Web Development",
+            "description": "Web development is the process of creating and maintaining websites and web applications using programming languages and design techniques."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1687187520/portfolio/icons/webDesign_tfbx5k.svg",
+            "title": "Web Design",
+            "description": "Web design is the art of creating visually appealing and user-friendly websites."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1687187146/portfolio/icons/idea_wzlp6s.svg",
+            "title": "Creative Idea",
+            "description": "Create a groundbreaking and immersive website that combines innovative design elements and advanced technologies to deliver a captivating user experience."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1687186876/portfolio/icons/shield_dfmjsq.svg",
+            "title": "Backend Security",
+            "description": "Backend security safeguards the server-side components of a website or web application through access controls, authentication, encryption, protecting against unauthorized access and data breaches."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1687187339/portfolio/icons/responsive_wkikux.svg",
+            "title": "Responsive",
+            "description": "Responsive design creates websites that optimize their layout and content for different devices, ensuring a seamless user experience on desktops, laptops, tablets and smartphones."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1687187448/portfolio/icons/seo_zq8czz.svg",
+            "title": "SEO",
+            "description": "SEO optimizes websites to improve their visibility and ranking on search engines, driving organic traffic and increasing online presence."
+        }
+    ]
+}
