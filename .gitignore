@@ -8,6 +8,10 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+!/public/build
+/public/hot
+/public/storage
+/vendor
 package-lock.json
 dist
 dist-ssr
