@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import PortfolioCard from "./PortfolioCard"
 import portfolioData from "./portfolio.json"
+import "./style.css"
 
 function Work() {
 

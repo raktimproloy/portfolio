@@ -43,3 +43,16 @@
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
+
+
+@media only screen and (max-width: 1300px) {
+    .card p {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .services .serv-content .card{
+        width: 100%;
+    }
+}

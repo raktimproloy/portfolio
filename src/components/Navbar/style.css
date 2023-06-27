@@ -46,6 +46,23 @@
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }
+.navbar.sticky .menu li a{
+    position: relative;
+}
+.navbar.sticky .menu li a::before{
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    z-index: 999;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+.navbar.sticky .menu li a:hover::before{
+    width: 100%;
+}
 
 /* menu btn styling */
 .menu-btn{
@@ -81,5 +98,13 @@
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
-
-  
+@media only screen and (max-width: 855px) {
+    .navbar .menu li .hire{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+      display: none;
+    }
+}

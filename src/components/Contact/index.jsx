@@ -1,5 +1,6 @@
 import "./style.css"
 
+
 function Contact() {
   return (
     <section className="contact" id="contact">
@@ -38,13 +39,13 @@ function Contact() {
             </div>
             <div className="column right">
                 <div className="text">Message me</div>
-                <form action="https://formspree.io/f/mqkgooqj" method="POST">
+                <form action="https://formspree.io/f/xayzrreb" method="POST">
                     <div className="fields">
                         <div className="field name">
-                            <input type="text" placeholder="Name" name="Name" required/>
+                            <input type="text" placeholder="Name" name="name" required/>
                         </div>
                         <div className="field email">
-                            <input type="email" placeholder="Email" name="email_id" required/>
+                            <input type="email" placeholder="Email" name="email" required/>
                         </div>
                     </div>
                     <div className="field">

@@ -40,3 +40,10 @@
 .skillCard:hover .cardBox{
     transform: scale(1.05);
 }
+
+@media only screen and (max-width: 768px) {
+    .skillItems{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}

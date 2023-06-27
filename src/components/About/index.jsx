@@ -22,7 +22,7 @@ function About() {
 
                       Although I{`'`}m currently studying business management, I{`'`}ve been self-taught when it comes to programming, and I believe that drive and passion can overcome any obstacle.
                     </p>
-                    <a href="../../assets/cv/cv.doc" download="pdf" className="about-img pointer">Download Resume</a>
+                    <a href="../../assets/cv/cv.doc" download="pdf" className="about-img pointer downloadButton">Download Resume</a>
                 </div>
             </div>
         </div>
