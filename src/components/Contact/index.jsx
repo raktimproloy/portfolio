@@ -1,7 +1,47 @@
 import "./style.css"
-
+// import emailjs from 'emailjs-com';
 
 function Contact() {
+    function sendEmail(e) {
+        e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
+    
+        // emailjs.sendForm('service_0mk5b65', 'template_xos2f5i', e.target, 'NCwDImUREZKY93h9T')
+        //   .then((result) => {
+        //     console.log(result)
+        //       window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
+        //   }, (error) => {
+        //       console.log(error.text);
+        //   });
+
+        const requestOptions = {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            // body: JSON.stringify({ title: 'React POST Request Example' })
+            body: {
+                "name": "Sudipto",
+                "email": "sudipto@gmail.com",
+                "phone": "0123"
+            }
+        };
+        fetch('http://localhost:3001/contactus/send/to:avilashlasker01@gmail.com&sub:portfolio_contact', requestOptions)
+            .then(async response => {
+                const isJson = response.headers.get('content-type')?.includes('application/json');
+                const data = isJson && await response.json();
+    
+                // check for error response
+                if (!response.ok) {
+                    // get error message from body or default to response status
+                    const error = (data && data.message) || response.status;
+                    return Promise.reject(error);
+                }
+    
+                this.setState({ postId: data.id })
+            })
+            .catch(error => {
+                this.setState({ errorMessage: error.toString() });
+                console.error('There was an error!', error);
+            });
+    }
   return (
     <section className="contact" id="contact">
     <div className="max-width">
@@ -39,7 +79,7 @@ function Contact() {
             </div>
             <div className="column right">
                 <div className="text">Message me</div>
-                <form action="https://formspree.io/f/xayzrreb" method="POST">
+                <form onSubmit={sendEmail}>
                     <div className="fields">
                         <div className="field name">
                             <input type="text" placeholder="Name" name="name" required/>
@@ -56,6 +96,7 @@ function Contact() {
                     </div>
                     <div className="button">
                         <button type="submit">Send message</button>
+                        <a href="mailto:raktimproloy01@gmail.com?subject='Hello from Abstract!'&body='Just popped in to say hello'">Click</a>
                     </div>
                 </form>
             </div>

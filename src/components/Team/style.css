@@ -14,7 +14,6 @@
     overflow: hidden;
     transition: all 0.3s ease;
     width: 100%;
-    height: 28rem;
 }
 .teams .carousel .card .box{
     display: flex;
@@ -73,6 +72,7 @@
 .teamButtons p{
     background-color: crimson;
     color: white;
+    font-size: 18px;
     padding: 2% 6%;
     border-radius: 5px;
     cursor: pointer;
@@ -87,4 +87,11 @@
 
 .text{
     margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1050px) {
+    .teams .carousel .card{
+        padding: 25px 15px;
+        height: 25rem;
+    }
 }

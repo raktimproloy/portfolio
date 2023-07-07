@@ -1,6 +1,7 @@
 
 import "./style.css"
-import ProfileImage from "../../assets/dev3.png"
+// import ProfileImage from "../../assets/dev3.png"
+// import ProfileImageMain from "../../../public/edited-removebg.png"
 
 function Home() {
   return (
@@ -9,7 +10,7 @@ function Home() {
       <div className="home-content">
         <div className="text-2">Sudipto Laskar</div>
         <div className="text-3">He is a Passionate Web Developer</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eaque maxime, doloremque eveniet omnis repellat quis impedit ut velit quod.</p>
+        <p>Creative MERN stack web developer. Transforms ideas into captivating experiences. Expert in design and technical execution. Innovative problem-solver. Let{`'`}s build something extraordinary!</p>
         <br/>
         <div className=" iconContainer">
           {/* Facebook */}
@@ -41,7 +42,7 @@ function Home() {
         <a href="mailto:avilashlasker01@gmail.com" className="hire about-img pointer">Hire him</a>
       </div>
       <div className="profileImg">
-        <img src={ProfileImage} alt="" />
+        {/* <img src={ProfileImage} alt="" /> */}
       </div>
     </div>
   </section>

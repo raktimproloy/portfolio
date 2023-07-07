@@ -10,7 +10,7 @@
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-    justify-content: center;
+    justify-content: start;
     position: relative;
     z-index: 0;
 }
@@ -25,6 +25,7 @@
     z-index: -1;
 }
 .homeContainer{
+    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,6 +91,31 @@
     width: 55%;
     height: 55%;
     pointer-events: none;
+}
+.profileImg img{
+    height: 30rem;
+}
+
+@media only screen and (max-width: 1250px) {
+    .home .home-content .text-2{
+        font-size: 55px;
+    }
+    .home .home-content .text-3{
+        font-size: 25px;
+    }
+    .home .home-content .hire{
+        font-size: 20px;
+        padding: 8px 36px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .home .home-content .text-2{
+        font-size: 40px;
+    }
+    .home .home-content .text-3{
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 768px) {

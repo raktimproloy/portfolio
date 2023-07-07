@@ -41,9 +41,40 @@
     transform: scale(1.05);
 }
 
+@media only screen and (max-width: 1024px) {
+    .cardBox img{
+        width: 30%;
+        height: 30%;
+    }
+    .cardBox p{
+        font-size: 14px;
+    }
+    .skillItems{
+        display: grid;
+        padding: 0px 20px;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+}
 @media only screen and (max-width: 768px) {
+    .cardBox{
+        height: 15rem;
+    }
+    .cardBox img{
+        width: 70px;
+        height: 70px;
+    }
+    .cardBox p{
+        font-size: 15px;
+    }
     .skillItems{
         display: grid;
         grid-template-columns: 50% 50%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .skillItems{
+        display: grid;
+        padding: 0px 20px;
+        grid-template-columns: 100%;
     }
 }

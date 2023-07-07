@@ -8,6 +8,7 @@ function ResumeCard(resume) {
         <p>{resume.resume.description}</p>
         <h4>{resume.resume.position} {"("}{resume.resume.startTime} - {resume.resume.endTime}{")"}</h4>
         <p>Work - Javascript, React, Typescript</p>
+        <span>UK</span>
     </div>
   )
 }

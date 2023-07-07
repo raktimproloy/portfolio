@@ -40,6 +40,31 @@
     background: none;
 }
 
+@media only screen and (max-width: 1250px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+    .about .about-content .right a{
+        font-size: 18px;
+        padding: 8px 36px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .about .about-content .left img{
+        height: 280px;
+        width: 280px;
+    }
+    .about .about-content .right a{
+        font-size: 17px;
+        padding: 8px 36px;
+    }
+    .about .about-content .right p{
+        font-size: 15px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .about .about-content .left{
         display: none;
