@@ -17,7 +17,7 @@ function Resume() {
     <div className="max-width">
       <h2 className="title">Experiance</h2>
       <div className="semiTitleContainer">
-        <p className="semiTitleBgWhite">Services provided by me</p>
+        <p className="semiTitleBgWhite">Journey Through My Professional Experience</p>
       </div>
       <div className="experianceContainer">
         {

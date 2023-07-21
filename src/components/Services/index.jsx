@@ -17,7 +17,7 @@ function Services() {
     <div className="max-width">
       <h2 className="title">Services</h2>
       <div className="semiTitleContainer">
-        <p className="semiTitleBgBlack">what i provide</p>
+        <p className="semiTitleBgBlack">What I Provide</p>
       </div>
       <div className="serv-content">
         {

@@ -1,7 +1,6 @@
 
 
 function ResumeCard(resume) {
-    console.log(resume.resume.description)
   return (
     <div className="experianceCard">
         <h1>{resume.resume.name}</h1>

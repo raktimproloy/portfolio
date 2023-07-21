@@ -15,7 +15,7 @@ function Work() {
         <div className="max-width">
             <h2 className="title">Portfolio</h2>
             <div className="semiTitleContainer">
-                <p className="semiTitleBgBlack">what i provide</p>
+                <p className="semiTitleBgBlack">My Diverse Portfolio</p>
             </div>
             <div className="carousel owl-carousel">
             {

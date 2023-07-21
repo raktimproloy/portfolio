@@ -1,7 +1,6 @@
 
 
 function PortfolioCard(portfolio) {
-  console.log(portfolio.portfolio.createdBy)
   return (
     <div className="portfolioCard">
             <img src={portfolio.portfolio.image} alt="" className="portfolioImage"/>

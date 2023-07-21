@@ -9,8 +9,8 @@ function Home() {
     <div className="max-width homeContainer">
       <div className="home-content">
         <div className="text-2">Sudipto Laskar</div>
-        <div className="text-3">He is a Passionate Web Developer</div>
-        <p>Creative MERN stack web developer. Transforms ideas into captivating experiences. Expert in design and technical execution. Innovative problem-solver. Let{`'`}s build something extraordinary!</p>
+        <div className="text-3">I am a Passionate Web Developer</div>
+        <p className="text-4">Creative MERN stack web developer. Transforms ideas into captivating experiences. Expert in design and technical execution. Innovative problem-solver. Let{`'`}s build something extraordinary!</p>
         <br/>
         <div className=" iconContainer">
           {/* Facebook */}

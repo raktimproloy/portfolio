@@ -16,7 +16,7 @@ function Skills() {
   <section className="skills" id="skills">
     <h2 className="title">My skills</h2>
     <div className="semiTitleContainer">
-      <p className="semiTitleBgWhite">What i know</p>
+      <p className="semiTitleBgWhite">A Skill Showcase</p>
     </div>
 
     <div className="skillContainer max-width">

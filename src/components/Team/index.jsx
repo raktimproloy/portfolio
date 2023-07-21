@@ -17,7 +17,7 @@ function Team() {
     <div className="max-width">
         <h2 className="title">Team</h2>
         <div className="semiTitleContainer">
-            <p className="semiTitleBgBlack">what i provide</p>
+            <p className="semiTitleBgBlack">My Dynamic Team Journey</p>
         </div>
         <div className="carousel owl-carousel">
             {

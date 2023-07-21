@@ -1,7 +1,6 @@
 
 
 function SkillCard(skill) {
-  console.log(skill.skill.logo)
   return (
     <div className="skillCard">
       <div className="cardBox">

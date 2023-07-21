@@ -1,33 +1,23 @@
 
 import './App.css'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import About from './components/About'
-import Services from './components/Services'
-import Skills from './components/Skills'
-import Portfolio from './components/Portfolio'
-import Resume from './components/Resume'
-import Team from './components/Team'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import Home from './pages/Home'
+import About from './pages/About';
+import { Outlet, useRoutes } from "react-router-dom";
+import Bot from "./components/Bot"
 
-function App() {
-
+function App() { 
+  let routes = useRoutes([
+    { path: "/", element: <Home /> },
+    { path: "/about", element: <About /> }
+  ]);
   return (
     <>
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Services/>
-      <Skills/>
-      <Portfolio/>
-      <Resume/>
-      <Team/>
-      <Contact/>
-      <Footer/>
-    
+      {routes}
+      {/* HEllo */}
+      {/* <Bot /> */}
+      <Outlet /> {/* Render nested routes */}
     </>
-  )
+  );
 }
 
 export default App

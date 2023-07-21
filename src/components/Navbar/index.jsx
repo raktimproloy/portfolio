@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import "./style.css"
+import sectionHandler from '../../common/sectionHandler';
 
 function Navbar() {
 
@@ -16,6 +17,7 @@ function Navbar() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
   return (
     <>
     <div className="scroll-up-btn">
@@ -24,14 +26,14 @@ function Navbar() {
     <nav className={`navbar ${scrollPosition !== 0 && "sticky"}`}>
         <div className="max-width">
             <ul className="menu about-img" style={{padding: "20px", borderRadius: "10px"}}>
-                <li><a href="#home" className="menu-btn hire">Home</a></li>
-                <li><a href="#about" className="menu-btn hire">About</a></li>
-                <li><a href="#services" className="menu-btn hire">Services</a></li>
-                <li><a href="#skills" className="menu-btn hire">Skills</a></li>
-                <li><a href="#portfolio" className="menu-btn hire">Portfolio</a></li>
-                <li><a href="#resume" className="menu-btn hire">Resume</a></li>
-                <li><a href="#teams" className="menu-btn hire">Team</a></li>
-                <li><a href="#contact" className="menu-btn hire">Contact</a></li>
+                <li onClick={() => sectionHandler("home")}><a className="menu-btn hire">Home</a></li>
+                <li onClick={() => sectionHandler("about")}><a className="menu-btn hire">About</a></li>
+                <li onClick={() => sectionHandler("services")}><a className="menu-btn hire">Services</a></li>
+                <li onClick={() => sectionHandler("skills")}><a className="menu-btn hire">Skills</a></li>
+                <li onClick={() => sectionHandler("portfolio")}><a className="menu-btn hire">Portfolio</a></li>
+                <li onClick={() => sectionHandler("resume")}><a className="menu-btn hire">Resume</a></li>
+                <li onClick={() => sectionHandler("team")}><a className="menu-btn hire">Team</a></li>
+                <li onClick={() => sectionHandler("contact")}><a className="menu-btn hire">Contact</a></li>
             </ul>
             <div className="menu-btn">
                 <i className="fas fa-bars"></i>

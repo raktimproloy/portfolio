@@ -47,7 +47,7 @@ function Contact() {
     <div className="max-width">
         <h2 className="title">Contact me</h2>
         <div className="semiTitleContainer">
-            <p className="semiTitleBgWhite">get in touch with him</p>
+            <p className="semiTitleBgWhite">Reach Out and Stay in Touch</p>
         </div>
         <div className="contact-content">
             <div className="column left">
@@ -96,7 +96,6 @@ function Contact() {
                     </div>
                     <div className="button">
                         <button type="submit">Send message</button>
-                        <a href="mailto:raktimproloy01@gmail.com?subject='Hello from Abstract!'&body='Just popped in to say hello'">Click</a>
                     </div>
                 </form>
             </div>
