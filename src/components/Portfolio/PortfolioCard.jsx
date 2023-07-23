@@ -1,5 +1,4 @@
 
-
 function PortfolioCard(portfolio) {
   return (
     <div className="portfolioCard">
@@ -15,8 +14,8 @@ function PortfolioCard(portfolio) {
               }
             </div>
             <div className="portfolioButtons">
-              <p>Visit</p>
-              <p>Github</p>
+              <a href={portfolio.portfolio.live} target="_blank" rel="noopener noreferrer">Visit</a>
+              <a href={portfolio.portfolio.github} target="_blank" rel="noopener noreferrer">Github</a>
             </div>
         </div>
     </div>

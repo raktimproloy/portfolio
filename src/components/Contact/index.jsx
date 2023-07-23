@@ -14,8 +14,10 @@ function Contact() {
         //   });
 
         const requestOptions = {
+            mode: 'no-cors',
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
+            credentials: 'same-origin',
             // body: JSON.stringify({ title: 'React POST Request Example' })
             body: {
                 "name": "Sudipto",
@@ -25,6 +27,7 @@ function Contact() {
         };
         fetch('http://localhost:3001/contactus/send/to:avilashlasker01@gmail.com&sub:portfolio_contact', requestOptions)
             .then(async response => {
+                console.log(response)
                 const isJson = response.headers.get('content-type')?.includes('application/json');
                 const data = isJson && await response.json();
     
@@ -38,6 +41,7 @@ function Contact() {
                 this.setState({ postId: data.id })
             })
             .catch(error => {
+                console.log(error)
                 this.setState({ errorMessage: error.toString() });
                 console.error('There was an error!', error);
             });

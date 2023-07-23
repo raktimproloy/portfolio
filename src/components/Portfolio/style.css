@@ -12,6 +12,7 @@
 .portfolioImage{
     width: 100%;
     padding: 25px 35px 0px 35px;
+    height: 13rem;
 }
 .uses{
     display: flex;
@@ -33,7 +34,7 @@
     align-items: center;
     margin-top: 5%;
 }
-.portfolioButtons p{
+.portfolioButtons a{
     background-color: crimson;
     color: white;
     padding: 2% 6%;
@@ -43,7 +44,7 @@
     border: 2px solid crimson;
 }
 
-.portfolioButtons p:hover{
+.portfolioButtons a:hover{
     background-color: transparent;
     color: crimson;
 }
