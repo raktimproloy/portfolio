@@ -1,50 +1,43 @@
+import axios from "axios";
 import "./style.css"
+import { useState } from "react";
 // import emailjs from 'emailjs-com';
 
 function Contact() {
-    function sendEmail(e) {
-        e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
-    
-        // emailjs.sendForm('service_0mk5b65', 'template_xos2f5i', e.target, 'NCwDImUREZKY93h9T')
-        //   .then((result) => {
-        //     console.log(result)
-        //       window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
-        //   }, (error) => {
-        //       console.log(error.text);
-        //   });
 
-        const requestOptions = {
-            // mode: 'no-cors',
-            method: 'PUT',
-            headers: { 'Content-Type': 'application/json' },
-            credentials: 'same-origin',
-            // body: JSON.stringify({ title: 'React POST Request Example' })
-            body: {
-                "name": "Sudiptolaskar",
-                "email": "sudipto@gmail.com",
-                "phone": "0123"
+    const [contactData, setContactData] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+    })
+
+    const changeHandler = (e) => {
+        setContactData({...contactData, [e.target.name]: e.target.value})
+    }
+
+    function sendEmail(e) {
+        e.preventDefault(); 
+    
+        axios
+        .post(
+            'http://localhost:3002/contactus/send/to:avilashlasker01@gmail.com&sub:portfolio_contact',
+            contactData,
+            {
+                params: { 'api-version': '3.0' },
+                headers: {
+                    'content-type': 'application/json',
+                    'X-RapidAPI-Key': 'your-rapidapi-key',
+                    'X-RapidAPI-Host': 'microsoft-translator-text.p.rapidapi.com',
+                },
             }
-        };
-        fetch('https://email-api-elmo.onrender.com/contactus/send/to:avilashlasker01@gmail.com&sub:portfolio_contact', requestOptions)
-            .then(async response => {
-                console.log(response)
-                const isJson = response.headers.get('content-type')?.includes('application/json');
-                const data = isJson && await response.json();
-    
-                // check for error response
-                if (!response.ok) {
-                    // get error message from body or default to response status
-                    const error = (data && data.message) || response.status;
-                    return Promise.reject(error);
-                }
-    
-                this.setState({ postId: data.id })
-            })
-            .catch(error => {
-                console.log(error)
-                this.setState({ errorMessage: error.toString() });
-                console.error('There was an error!', error);
-            });
+        )
+        .then(function (response) {
+            console.log(response.data);
+        })
+        .catch(function (error) {
+            console.error(error);
+        });
     }
   return (
     <section className="contact" id="contact">
@@ -86,17 +79,17 @@ function Contact() {
                 <form onSubmit={sendEmail}>
                     <div className="fields">
                         <div className="field name">
-                            <input type="text" placeholder="Name" name="name" required/>
+                            <input type="text" placeholder="Name" name="name" required onChange={changeHandler}/>
                         </div>
                         <div className="field email">
-                            <input type="email" placeholder="Email" name="email" required/>
+                            <input type="email" placeholder="Email" name="email" required onChange={changeHandler}/>
                         </div>
                     </div>
                     <div className="field">
-                        <input type="text" placeholder="Subject" name="subject" required/>
+                        <input type="text" placeholder="Subject" name="subject" required onChange={changeHandler}/>
                     </div>
                     <div className="field textarea">
-                        <textarea cols="50" rows="20" placeholder="Message..." name="message" required></textarea>
+                        <textarea cols="50" rows="20" placeholder="Message..." name="message" required onChange={changeHandler}></textarea>
                     </div>
                     <div className="button">
                         <button type="submit">Send message</button>
