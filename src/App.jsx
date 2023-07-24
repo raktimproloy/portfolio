@@ -7,7 +7,7 @@ import Bot from "./components/Bot"
 
 function App() { 
   let routes = useRoutes([
-    { path: "/", element: <Home /> },
+    { path: "/portfolio", element: <Home /> },
     { path: "/about", element: <About /> }
   ]);
   return (
