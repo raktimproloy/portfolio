@@ -20,12 +20,12 @@ function Contact() {
             credentials: 'same-origin',
             // body: JSON.stringify({ title: 'React POST Request Example' })
             body: {
-                "name": "Sudipto",
+                "name": "Sudiptolaskar",
                 "email": "sudipto@gmail.com",
                 "phone": "0123"
             }
         };
-        fetch('http://localhost:3001/contactus/send/to:avilashlasker01@gmail.com&sub:portfolio_contact', requestOptions)
+        fetch('https://email-api-elmo.onrender.com/contactus/send/to:avilashlasker01@gmail.com&sub:portfolio_contact', requestOptions)
             .then(async response => {
                 console.log(response)
                 const isJson = response.headers.get('content-type')?.includes('application/json');
