@@ -14,7 +14,7 @@ function Contact() {
         //   });
 
         const requestOptions = {
-            mode: 'no-cors',
+            // mode: 'no-cors',
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             credentials: 'same-origin',
