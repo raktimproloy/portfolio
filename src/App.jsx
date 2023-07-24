@@ -13,7 +13,6 @@ function App() {
   return (
     <>
       {routes}
-      {/* HEllo */}
       {/* <Bot /> */}
       <Outlet /> {/* Render nested routes */}
     </>
