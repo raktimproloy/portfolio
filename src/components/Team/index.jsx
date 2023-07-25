@@ -13,7 +13,7 @@ function Team() {
     }, [])
 
   return (
-    <section className="teams" id="teams">
+    <section className="teams" id="team">
     <div className="max-width">
         <h2 className="title">Team</h2>
         <div className="semiTitleContainer">

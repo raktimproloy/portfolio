@@ -15,17 +15,10 @@
             "porforlio": "ww.loing.com"
         },
         {
-            "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252521/portfolio/dev3_ye2fnc.png",
-            "name": "Joshim vai",
-            "expert": "Laravel Developer",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem minus",
-            "porforlio": "ww.loing.com"
-        },
-        {
-            "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252521/portfolio/dev3_ye2fnc.png",
-            "name": "Joshim vai",
-            "expert": "Laravel Developer",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem minus",
+            "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1690201144/363278915_567326355402413_6510935870469592568_n_sq9ob1.jpg",
+            "name": "Jakir Hossain",
+            "expert": "SEO Expert",
+            "description": "4-year SEO & digital marketing expert, data-driven, boosts organic traffic, elevates rankings & visibility for businesses.",
             "porforlio": "ww.loing.com"
         }
     ]

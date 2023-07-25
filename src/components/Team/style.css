@@ -88,6 +88,9 @@
 .text{
     margin-bottom: 0;
 }
+.teamDes{
+    height: 7rem;
+}
 
 @media only screen and (max-width: 1050px) {
     .teams .carousel .card{

@@ -103,3 +103,41 @@
         font-size: 13px;
     }
 }
+@media only screen and (max-width: 650px) {
+    .services .serv-content .card{
+        width: 100%;
+        height: 22rem;
+    }
+    .services .serv-content .card .box img{
+        width: 60px;
+        height: 60px;
+    }
+    .services .serv-content .card .box div{
+        font-size: 18px;
+    }
+    .card p {
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .services .serv-content .card{
+        width: 100%;
+        height: 22rem;
+    }
+    .services .serv-content .card .box img{
+        width: 60px;
+        height: 60px;
+    }
+    .services .serv-content .card .box div{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .services .serv-content .card{
+        width: 100%;
+        height: 22rem;
+    }
+    .card p {
+        font-size: 14px;
+    }
+}

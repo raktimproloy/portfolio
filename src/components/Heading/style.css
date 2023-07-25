@@ -26,9 +26,7 @@
 }
 .homeContainer{
     width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0 auto;
 }
 .home .max-width{
     margin: auto 0 auto 30px;
@@ -119,6 +117,12 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .homeContainer{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .home{
         height: 30rem;
         display: flex;
@@ -140,5 +144,35 @@
     }
     .profileImg{
         display: none;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .home .home-content .text-2{
+        font-size: 35px;
+    }
+    .home .home-content .text-3{
+        font-size: 20px;
+    }
+    .home .home-content .text-4{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .home .home-content .hire{
+        display: none;
+    }
+    .home .home-content{
+        text-align: center;
+    }
+    .iconContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home{
+        height: 20rem;
+        display: flex;
+        align-items: center;
     }
 }

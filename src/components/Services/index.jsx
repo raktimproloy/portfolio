@@ -3,6 +3,8 @@ import ServiceCard from "./ServiceCard"
 import { useEffect, useState } from "react"
 import serviceData from "./service.json"
 
+
+
 function Services() {
 
   const [ data, setData] = useState([])
@@ -10,6 +12,7 @@ function Services() {
   useEffect(() => {
     setData(serviceData.data)
   }, [])
+
 
   return (
     <>

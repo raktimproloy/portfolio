@@ -1,7 +1,14 @@
+// importing aos
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function PortfolioCard(portfolio) {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <div className="portfolioCard">
+    <div className="portfolioCard" data-aos="fade-up">
             <img src={portfolio.portfolio.image} alt="" className="portfolioImage"/>
         <div className="portfolioCardItems">
             <div className="text">{portfolio.portfolio.title}</div>

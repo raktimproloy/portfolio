@@ -127,4 +127,13 @@
         padding: 0 20px;
         text-align: center;
    }
+   .contact .right form .fields{
+    display: block;
+    }
+    .contact .right form .name{
+        margin-right: 0px;
+    }
+    .contact .right form .email{
+        margin-left: 0px;  
+    }
 }

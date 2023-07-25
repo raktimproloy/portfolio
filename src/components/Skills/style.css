@@ -64,17 +64,28 @@
         height: 70px;
     }
     .cardBox p{
-        font-size: 15px;
+        font-size: 13px;
     }
     .skillItems{
         display: grid;
         grid-template-columns: 50% 50%;
     }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 650px) {
+    .cardBox p{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .cardBox p{
+        font-size: 14px;
+    }
     .skillItems{
         display: grid;
         padding: 0px 20px;
         grid-template-columns: 100%;
     }
+}
+@media only screen and (max-width: 425px) {
+    
 }

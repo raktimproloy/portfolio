@@ -133,10 +133,16 @@ section .title{
     row-gap: 20px;
 }
 }
-@media only screen and (max-width: 425px) {
-    .max-width{
-        width: 100%;
+@media only screen and (max-width: 500px) {
+    .home .max-width{
+        width: 95%;
         padding: 0;
+        margin: 0 auto !important;
+    }
+    .max-width{
+        width: 95%;
+        padding: 0;
+        margin: 0 auto !important;
     }
     .services .serv-content{
         padding: 0px 20px;

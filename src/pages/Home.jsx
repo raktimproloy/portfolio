@@ -11,7 +11,10 @@ import Footer from '../components/Footer'
 import Portfolio from "../components/Portfolio"
 
 
+
+
 function Home() {
+
   return (
     <>
         <Navbar/>

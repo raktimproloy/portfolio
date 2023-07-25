@@ -1,7 +1,7 @@
 import axios from "axios";
 import "./style.css"
-import { useState } from "react";
-// import emailjs from 'emailjs-com';
+import { useState, useEffect } from "react";
+
 
 function Contact() {
 
@@ -19,8 +19,7 @@ function Contact() {
     function sendEmail(e) {
         e.preventDefault(); 
     
-        axios
-        .post(
+        axios.post(
             'http://localhost:3002/contactus/send/to:avilashlasker01@gmail.com&sub:portfolio_contact',
             contactData,
             {
@@ -32,6 +31,7 @@ function Contact() {
                 },
             }
         )
+        
         .then(function (response) {
             console.log(response.data);
         })
@@ -39,6 +39,7 @@ function Contact() {
             console.error(error);
         });
     }
+
   return (
     <section className="contact" id="contact">
     <div className="max-width">
