@@ -19,8 +19,9 @@ function Contact() {
     function sendEmail(e) {
         e.preventDefault(); 
     
-        axios.post(
-            'http://localhost:3002/contactus/send/to:avilashlasker01@gmail.com&sub:portfolio_contact',
+        axios
+        .post(
+            'https://email-api-elmo.onrender.com/contactus/send/to:avilashlasker01@gmail.com&sub:portfolio_contact',
             contactData,
             {
                 params: { 'api-version': '3.0' },
