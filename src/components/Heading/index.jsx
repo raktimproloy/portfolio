@@ -39,7 +39,7 @@ function Home() {
           </a>
         </div>
         <br/>
-        <a href="mailto:avilashlasker01@gmail.com" className="hire about-img pointer">Hire him</a>
+        <a href="mailto:avilashlasker01@gmail.com" className="hire about-img pointer">Hire me</a>
       </div>
       {/* <div className="profileImg">
         <img src={ProfileImage} alt="" />

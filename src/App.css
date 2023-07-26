@@ -8,6 +8,7 @@
     text-decoration: none;
     caret-color: red;
     scroll-behavior: smooth;
+    transition-property: all !important;
 }
 
 /* custom scroll bar */
