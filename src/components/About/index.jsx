@@ -7,7 +7,12 @@ import { useEffect } from 'react'
 
 function About() {
   useEffect(() => {
-    AOS.init({disable: 'mobile'});
+    AOS.init({
+      disable: function() {
+        var maxWidth = 800;
+        return window.innerWidth < maxWidth;
+      }
+    });
   }, [])
   return (
     <section className="about" id="about" >
