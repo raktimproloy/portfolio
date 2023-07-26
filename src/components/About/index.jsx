@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 
 function About() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({disable: 'mobile'});
   }, [])
   return (
     <section className="about" id="about" >
