@@ -9,10 +9,17 @@
 .portfolioCardItems{
     padding: 25px 35px;
 }
+.portfolioCardItems .text{
+    font-weight: bold;
+}
 .portfolioImage{
     width: 100%;
     padding: 25px 35px 0px 35px;
     height: 13rem;
+}
+.portfolioDes{
+    font-size: 13px;
+    height: 7rem;
 }
 .uses{
     display: flex;
@@ -51,18 +58,35 @@
 
 @media only screen and (max-width: 1024px) {
     .portfolioCard{
-        height: 28rem;
+        height: 25rem;
     }
     .portfolioImage{
         padding: 0px;
+        height: 11rem;
     }
     .portfolioCardItems{
         padding: 15px 25px;
+    }
+    .portfolioDes{
+        font-size: 12px;
     }
     .uses{
         display: none;
     }
 }
+@media only screen and (max-width: 860px) {
+    .portfolioCard{
+        height: 25rem;
+    }
+    .portfolioImage{
+        height: 9rem;
+    }
+    .portfolioDes{
+        font-size: 12px;
+        height: 8.5rem;
+    }
+}
+
 
 @media only screen and (max-width: 768px) {
     .carousel{
@@ -70,13 +94,26 @@
         grid-template-columns: 50% 50% !important;
     }
     .portfolioCard{
-        height: 22rem;
+        height: 23rem;
     }
     .portfolioImage{
         padding: 0px;
     }
+    .portfolioDes{
+        font-size: 11px;
+        height: 6rem;
+    }
     .uses{
         display: none;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .portfolioDes{
+        font-size: 11px;
+        height: 7.5rem;
+    }
+    .portfolioCardItems{
+        padding: 5px 15px;
     }
 }
 
@@ -91,8 +128,10 @@
     }
     .portfolioImage{
         padding: 0px;
+        height: 13rem;
     }
-    .uses{
-        display: none;
+    .portfolioDes{
+        font-size: 11px;
+        height: 5rem;
     }
 }

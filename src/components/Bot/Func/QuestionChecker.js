@@ -8,7 +8,7 @@ function isQuestion(sentence) {
     }
   
     // Check if the sentence starts with typical question words
-    var questionWords = ['who', 'what', 'when', 'where', 'why', 'how', 'is', 'are', 'am', 'do', 'does', 'did', 'can', 'could', 'should', 'would', 'will', 'have', 'has', 'had', 'may', 'might', 'must', 'shall'];
+    var questionWords = ['who', 'what', 'when', 'where', 'why', 'how', 'is', 'are', 'am', 'do', 'does', 'did', 'can', 'could', 'should', 'would', 'will', 'have', 'has', 'had', 'may', 'might', 'must', 'shall', "tell"];
     for (var i = 0; i < questionWords.length; i++) {
       if (sentence.toLowerCase().startsWith(questionWords[i])) {
         return true;

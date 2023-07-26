@@ -12,7 +12,7 @@ function PortfolioCard(portfolio) {
             <img src={portfolio.portfolio.image} alt="" className="portfolioImage"/>
         <div className="portfolioCardItems">
             <div className="text">{portfolio.portfolio.title}</div>
-            <p>{portfolio.portfolio.description}</p>
+            <p className="portfolioDes">{portfolio.portfolio.description}</p>
             <div className="uses">
               {
                 portfolio.portfolio.createdBy.map((uses, index) => 
