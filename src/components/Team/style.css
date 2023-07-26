@@ -95,6 +95,67 @@
 @media only screen and (max-width: 1050px) {
     .teams .carousel .card{
         padding: 25px 15px;
-        height: 25rem;
+        height: 26rem;
+    }
+    .teamDes{
+        height: 6rem;
+    }
+}
+@media only screen and (max-width: 875px) {
+    .teams .carousel .card{
+        padding: 25px 15px;
+        height: 26rem;
+    }
+    .teams .carousel .card .text{
+        font-size: 20px;
+    }
+    .expertText{
+        font-size: 15px;
+    }
+    .teamDes{
+        height: 6rem;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .teams .carousel .card{
+        padding: 25px 15px;
+        height: 25.5rem;
+    }
+    .teams .carousel .card .text{
+        font-size: 17px;
+    }
+    .expertText{
+        font-size: 13px;
+    }
+    .teamDes{
+        height: 6.5rem;
+    }
+    .teamButtons p{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .teamDes{
+        height: 5rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .teams .carousel .card{
+        padding: 25px 15px;
+        height: 25.5rem;
+    }
+    .teams .carousel .card .text{
+        font-size: 17px;
+    }
+    .expertText{
+        font-size: 13px;
+    }
+    .teamDes{
+        height: 6.5rem;
+    }
+    .teamButtons p{
+        font-size: 15px;
     }
 }

@@ -12,20 +12,29 @@
 }
 .experianceCard span{
     position: absolute;
-    top: 15%;
+    top: 10%;
     right: 5%;
     padding: .5% 3%;
     background-color: crimson;
     border-radius: 5px;
 }
+.locationOne{
+    display: none;
+}
 @media only screen and (max-width: 768px) {
     .experianceContainer{
         display: block;
     }
-}
-@media only screen and (max-width: 768px) {
     .experianceContainer{
         padding: 0 20px;
         display: block;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .locationOne{
+        display: block;
+    }
+    .locationTwo{
+        display: none;
     }
 }
