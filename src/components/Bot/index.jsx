@@ -6,16 +6,17 @@ import sectionHandler  from "../../common/sectionHandler";
 import isQuestion from "./Func/QuestionChecker";
 import AskBotName from "./Func/AskBotName";
 import GreetingIdentify from "./Func/GreetingIdentify";
-import {GreetingReplay, AskNameReplay} from "./Data/AnswerData";
+import {GreetingReplay, AskNameReplay, GoingSection} from "./Data/AnswerData";
 import OpenSection from "./Func/OpenSection";
 import CheckingFunc from "./Func/CheckingFunc";
-import { askBotName } from "./Func/ListeningIdentify";
+// import { askBotName } from "./Func/ListeningIdentify";
 
 function Bot() {
   const navigate = useNavigate()
     const [listeningValue, setListeningValue] = useState(false)
     const [botText, setBotText] = useState("Start")
     const [listenValue, setListenValue] = useState('');
+    const [animation, setAnimation] = useState("botAnimationUpDown")
     const { listen, stop } = useSpeechRecognition({
       onResult: (result) => {
         setListenValue(result);
@@ -24,7 +25,6 @@ function Bot() {
     });
 
     const { speak, voices, speaking } = useSpeechSynthesis();
-    console.log(askBotName("what is your name"))
     /* 
       NOTE: 
       redirect link
@@ -53,12 +53,15 @@ function Bot() {
           if(isQuestion(textListening)){
             if(AskBotName(textListening)){
               speak({ text: AskNameReplay(), voice:voices[5] })
+            }else if(OpenSection(textListening).match){
+              speak({ text: GoingSection(OpenSection(textListening).section, true), voice:voices[5] })
+              sectionHandler(OpenSection(textListening).section)
             }
           }else{
             if(GreetingIdentify(textListening)){
               speak({ text: GreetingReplay(), voice:voices[5] })
             }else if(OpenSection(textListening).match){
-              speak({ text: "going", voice:voices[5] })
+              speak({ text: GoingSection(OpenSection(textListening).section), voice:voices[5] })
               sectionHandler(OpenSection(textListening).section)
             }else{
               speak({ text: "I don't understand", voice:voices[5] })
@@ -94,7 +97,17 @@ function Bot() {
 
 
 
-
+    useEffect(() => {
+      if(animation === "botAnimationUpDown"){
+        setTimeout(() => {
+          setAnimation("botAnimationRotate")
+        }, 10000);
+      }else{
+        setTimeout(() => {
+          setAnimation("botAnimationUpDown")
+        }, 3000);
+      }
+    }, [animation])
 
 
 
@@ -105,11 +118,14 @@ function Bot() {
 
   return (
     <div className="botContainer">
-      <textarea
+      <input
+      className="botListenInput"
         value={listenValue}
         onChange={(event) => setListenValue(event.target.value)}
       />
-      <button onClick={() => {
+      <div className="botIconContainer">
+        <div className="botMessage botMessageGoing">Hello sir</div>
+        <img src="/src/assets/bot.png" alt="" className={`botIcon ${animation}`} onClick={() => {
         setListeningValue(!listeningValue)
         if(!listeningValue){
           listen()
@@ -117,7 +133,9 @@ function Bot() {
           stop()
         }
         setBotText("Listening")
-        }}>{botText}</button>
+        }}/>
+      </div>
+      <button>{botText}</button>
     </div>
   )
 }

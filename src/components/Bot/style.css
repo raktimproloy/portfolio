@@ -1,9 +1,81 @@
 .botContainer{
     position: fixed;
     z-index: 999999;
-    height: 100%;
+    width: 200px;
+    bottom: 10%;
+    right: 2%;
+}
+.botListenInput{
     width: 100%;
+    height: 3rem;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 0px 10px;
+    padding: 5px;
+}
+.botListenInput:focus-visible{
+    outline: 0px;
+} 
+.botIconContainer{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.botMessage{
+    position: absolute;
+    background-color: crimson;
+    border-radius: 10px 30px 0px 10px;
+    padding: 10px;
+    color: white;
+    transition: all .7s ease-in-out;
+}
+.botMessageComming{
+    width: 10rem;
+    top: 0%;
+    left: -150%;
+    visibility: visible;
+    opacity: 1;
+}
+.botMessageGoing{
     top: 50%;
     left: 50%;
-    color: greenyellow;
+    width: 0rem;
+    height: 0rem;
+    visibility: hidden;
+    opacity: 0;
+}
+.botIcon{
+    border-radius: 20%;
+    width: 85px;
+    height: 85px;
+    cursor: pointer;
+}
+
+.botAnimationUpDown{
+    animation: botUpDown infinite 3s;
+}
+.botAnimationRotate{
+    animation: botRotate 1 2s;
+}
+
+@keyframes botUpDown {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes botRotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
