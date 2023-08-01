@@ -3,7 +3,7 @@ function OpenSection(sentence) {
   sentence = sentence.trim().toLowerCase();
 
   // Check if the sentence contains keywords/phrases related to asking for the bot's name
-  var firstKeywords = ['home', 'about', "service", "skills", "skill", "portfolio", "resume", "team", "contact"];
+  var firstKeywords = ['home', 'about', "service", "skills", "skill", "portfolio", "resume", "team", "contact","gmail"];
   var secoundKeywords = ['open', "navigate to", "click on", "access", "explore", "take", "visit", "delve", "in the", "discover", "uncover", "head over to", "highlights", "within", "go", "get", "browse", ];
   
   let isMatch = false
@@ -22,7 +22,6 @@ function OpenSection(sentence) {
       break;
     }
   }
-  console.log(isMatch)
   return {
     match: isMatch,
     section: firstKeywords[n]

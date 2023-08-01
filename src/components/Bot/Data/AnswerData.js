@@ -79,19 +79,6 @@ const questionReply = [
     `Yes, I can`
 ]
 export function GoingSection(section, question){
-
-    /*
-    "We are reaching [Section Name]! This is where you'll find [Brief description of section content]. Enjoy exploring!",
-        "You've landed in [Section Name]. Are you looking for something specific? Let me know if I can be of any assistance.",
-        "Welcome to [Section Name]. As you navigate through this area, you'll discover [Key features/benefits of the section].",
-        "Ah, [Section Name], one of our most popular spots! Take your time and make the most of the resources available here.",
-        "You've just stepped into [Section Name], where [Description of what the section offers]. Feel free to delve deeper into the content.",
-        "Greetings! You've arrived at [Section Name]. Explore our collection of [Content type] and find what intrigues you the most.",
-        "Welcome back to [Website Name]! [Section Name] is waiting for you with exciting content and useful resources.",
-        "Bravo! You've found your way to [Section Name]. Whether you're a newbie or an expert, there's something for everyone here.",
-        "Congratulations on discovering [Section Name]. Prepare to be amazed by the valuable insights and delightful content that awaits you."
-    
-    */
         const randomIndex = Math.floor(Math.random() * section.length);
         const randomIndexTwo = Math.floor(Math.random() * questionReply.length)
         let text = ""
@@ -115,7 +102,7 @@ export function GoingSection(section, question){
             case "team":
                 text = team[randomIndex]
                 break;
-            case "contact":
+            case "contact" || "gmail":
                 text = contact[randomIndex]
                 break;
             default:
@@ -128,3 +115,109 @@ export function GoingSection(section, question){
 
     return text
 }
+
+// Replay on going Link
+
+
+
+export function GoingLink(site ,question){
+    const linkQusnReply = [
+        `Sure, I'll take you to ${site}.`,
+        `You got it! Redirecting you to ${site} now.`,
+        `Alright, let's visit ${site}.`,
+        `${site} coming right up.`,
+        `Got it! Taking you to ${site}'s doorstep.`,
+    ]
+    const randomIndex = Math.floor(Math.random() * linkQusnReply.length)
+    let text = linkQusnReply[randomIndex]
+
+
+
+// if(question){
+//     text = questionReply[randomIndexTwo] + text
+// }
+
+return text
+}
+
+const homeVisit = [
+    `He is a Passionate MERN stack developer, creative problem-solver, and outstanding projects creator.`
+]
+const aboutVisit = [
+    `he is a passionate and self-taught web developer with expertise in HTML, CSS, JavaScript, React, Node, Express, MongoDB, C, Java, CMD, and algorithm design.`
+]
+const servicesVisit = [
+    `His Services: Web development and design with a focus on functionality, security, and creativity. Elevate your projects and captivate your audience with seamless user experiences and optimized SEO.`
+]
+const skillsVisit = [
+    `His Skills: Proficient in HTML, CSS, and JavaScript, with expertise in React and Next for building seamless user interfaces. Experienced in Node, Express, and MongoDB for developing feature-rich web applications, ensuring captivating and innovative digital experiences.`
+]
+const portfolioVisit = [
+    `His Portfolio: Captivating blog website and interactive multiplayer game utilizing MERN stack and HTML, CSS, JavaScript. Distinctive portfolio with Next, Tailwind CSS, showcasing design flair and proficiency in web development technologies.`
+]
+const resumeVisit = [
+    `Element Zero Lab (2022): Junior Frontend Developer in the UK. Worked on diverse projects, mastering JavaScript, React, and TypeScript. Collaborated with seasoned professionals, honed skills, and grew professionally, enriching web development journey.`
+]
+const teamVisit = [
+    `Meet the talented team: Joshim, the Laravel Developer, brings robust API solutions with market insights. Shakib, the Front-End Developer, enhances user experiences with creative web design. Jakir, the SEO Expert, drives business growth with data-driven strategies. Together, we transform ideas into impactful realities with seamless collaboration and diverse expertise.`
+]
+const contactVisit = [
+    `Connect with him easily through the user-friendly contact section. Email, phone number, and secure contact form available for prompt responses. Explore exciting possibilities for collaboration and networking today.`
+]
+
+
+export function visitText(section){
+    console.log("section", section)
+    let vistiText = ""
+    switch(section) {
+        case "home": 
+        vistiText = homeVisit[0]
+            break;
+        case "about":
+            vistiText = aboutVisit[0]
+          break;
+        case "services":
+            vistiText = servicesVisit[0]
+          break;
+        case "skills":
+            vistiText = skillsVisit[0]
+            break;
+        case "portfolio":
+            vistiText = portfolioVisit[0]
+            break;
+        case "resume":
+            vistiText = resumeVisit[0]
+            break;
+        case "team":
+            vistiText = teamVisit[0]
+            break;
+        case "contact":
+            vistiText = contactVisit[0]
+            break;
+        default:
+            vistiText = "The section I can Identify"
+      }
+    return vistiText
+}
+
+
+// replay when user told what you can do
+
+
+/* 
+
+Hello there! I am your trusty Web Assistant Bot, your very own digital navigator in the vast online realm. My purpose is to assist you with this website-related needs and make your online experience a breeze. Whether you're looking for information, socializing, or exploring the web, I've got you covered!
+
+What Can I Do for You?
+
+Introduce Myself: If you ask me "What's your name?", I'll happily reveal my identity and let you know that I am your loyal Web Assistant Bot.
+
+Website Tour Guide: Want a guided tour of this website? I'll take you on a virtual journey through its pages, pointing out essential sections and providing helpful information along the way.
+
+Social Media Shortcut: If you need quick access to my owner Facebook or LinkedIn profile,  I'll instantly redirect you to their respective profiles.
+
+Instant Navigation: Whether you need to jump to a specific section within a website or explore a particular topic, let me know your destination, and I'll whisk you away there without any hassle.
+
+Remember, I'm here to make your online journey smoother and more enjoyable. Thank you 
+
+*/
