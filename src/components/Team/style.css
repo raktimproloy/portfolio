@@ -69,7 +69,7 @@
     align-items: center;
     margin-top: 5%;
 }
-.teamButtons p{
+.teamButtons a{
     background-color: crimson;
     color: white;
     font-size: 18px;
@@ -79,8 +79,7 @@
     transition: all .3s ease-in-out;
     border: 2px solid crimson;
 }
-
-.teamButtons p:hover{
+.teamButtons a:hover{
     background-color: transparent;
     color: crimson;
 }
@@ -130,7 +129,7 @@
     .teamDes{
         height: 6.5rem;
     }
-    .teamButtons p{
+    .teamButtons a{
         font-size: 15px;
     }
 }
@@ -155,7 +154,7 @@
     .teamDes{
         height: 6.5rem;
     }
-    .teamButtons p{
+    .teamButtons a{
         font-size: 15px;
     }
 }

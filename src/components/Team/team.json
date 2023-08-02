@@ -5,21 +5,24 @@
             "name": "Joshim Uddin",
             "expert": "Laravel Developer",
             "description": "As an expert in developing APIs, have two years of experience working with the local job and market.",
-            "porforlio": "ww.loing.com"
+            "porforlio": "ww.loing.com",
+            "github": "https://github.com/JoshimOfficial"
         },
         {
             "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1690128355/WhatsApp_Image_2022-09-19_at_12.41.51_AM_lxntey.jpg",
             "name": "Shakib Bhuiyan",
             "expert": "Front-End Developer",
             "description": "Best for Web Design. My strength lies in generating creative and innovative design ideas that enhance the overall user experience.",
-            "porforlio": "ww.loing.com"
+            "porforlio": "ww.loing.com",
+            "github": "https://github.com/tokir-ahmad629"
         },
         {
             "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1690201144/363278915_567326355402413_6510935870469592568_n_sq9ob1.jpg",
             "name": "Jakir Hossain",
             "expert": "SEO Expert",
             "description": "4-year SEO & digital marketing expert, data-driven, boosts organic traffic, elevates rankings & visibility for businesses.",
-            "porforlio": "ww.loing.com"
+            "porforlio": "ww.loing.com",
+            "github": "https://github.com/jakircse99"
         }
     ]
 }

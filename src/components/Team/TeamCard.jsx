@@ -17,8 +17,8 @@ function TeamCard(team) {
             {/* <a href="">{team.team.porforlio}</a> */}
             
             <div className="teamButtons">
-              <p>Visit</p>
-              <p>Github</p>
+              {/* <p>Visit</p> */}
+              <a href={team.team.github} target='_blank' rel="noreferrer">Github</a>
             </div>
         </div>
     </div>
