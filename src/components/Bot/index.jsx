@@ -3,24 +3,16 @@ import "./style.css"
 import { useSpeechRecognition, useSpeechSynthesis } from 'react-speech-kit';
 import { useNavigate } from "react-router-dom";
 import sectionHandler  from "../../common/sectionHandler";
-import isQuestion from "./Func/QuestionChecker";
-import AskBotName from "./Func/AskBotName";
-import GreetingIdentify from "./Func/GreetingIdentify";
 import {GreetingReplay, AskNameReplay, GoingSection, GoingLink, visitText} from "./Data/AnswerData";
-import OpenSection from "./Func/OpenSection";
-import CheckingFunc from "./Func/CheckingFunc";
-import RedirectLink from "./Func/RediectLink";
+import {isQuestion, AskBotName, GreetingIdentify, OpenSection, RedirectLink, VisittingNow } from "./Func/CheckingFunc";
 import linkHandler from "../../common/linkHandler";
-import VisittingNow from "./Func/VisittingNow";
-// import { askBotName } from "./Func/ListeningIdentify";
 
 function Bot() {
   const navigate = useNavigate()
     const [listeningValue, setListeningValue] = useState(false)
-    // const [getValue, setGetValue] = useState("")
-    // const [getValuePopup, setGetValuePopup] = useState(false)
     const [pitch, setPitch] = useState(0.8);
     const [rate, setRate] = useState(1);
+    const [voiceNum, setVoiceNum] = useState(1)
     const [learningValue, setLearningValue] = useState([])
     const [visit, setVisit] = useState(false)
     const [botText, setBotText] = useState("Start")
@@ -52,33 +44,33 @@ function Bot() {
           stop()
           if(isQuestion(textListening)){
             if(AskBotName(textListening)){
-              speak({ text: AskNameReplay(), voice:voices[1], rate, pitch })
+              speak({ text: AskNameReplay(), voice:voices[voiceNum], rate, pitch })
             }else if(OpenSection(textListening).match){
-              speak({ text: GoingSection(OpenSection(textListening).section, true), voice:voices[1], rate, pitch })
+              speak({ text: GoingSection(OpenSection(textListening).section, true), voice:voices[voiceNum], rate, pitch })
               sectionHandler(OpenSection(textListening).section)
             }
             else{
-              speak({ text: "I don't understand.", voice:voices[1], rate, pitch })
+              speak({ text: "I don't understand.", voice:voices[voiceNum], rate, pitch })
               // setLearningValue([...learningValue, textListening])
             }
           }else{
             if(GreetingIdentify(textListening)){
-              speak({ text: GreetingReplay(), voice:voices[1], rate, pitch })
+              speak({ text: GreetingReplay(), voice:voices[voiceNum], rate, pitch })
             }else if(OpenSection(textListening).match){
-              speak({ text: GoingSection(OpenSection(textListening).section, false), voice:voices[1], rate, pitch })
+              speak({ text: GoingSection(OpenSection(textListening).section, false), voice:voices[voiceNum], rate, pitch })
               sectionHandler(OpenSection(textListening).section)
             }else if(RedirectLink(textListening).match){
-              speak({ text: GoingLink(RedirectLink(textListening).section, false), voice:voices[1], rate, pitch })
+              speak({ text: GoingLink(RedirectLink(textListening).section, false), voice:voices[voiceNum], rate, pitch })
               linkHandler(RedirectLink(textListening).section)
             }else if(VisittingNow(textListening).match){
               handleVisit()
             }
             else{
-              speak({ text: "I don't understand", voice:voices[1], rate, pitch })
+              speak({ text: "I don't understand", voice:voices[voiceNum], rate, pitch })
             }
           }
         }else{
-          speak({ text: "Speak some thing", voice:voices[1], rate, pitch })
+          speak({ text: "Speak some thing", voice:voices[voiceNum], rate, pitch })
         }
       }, 1000);
     }
@@ -110,25 +102,8 @@ function Bot() {
         setVisit(false)
         setCount(0)
       }
-      
-
-      
     }
     
-
-
-
-
-
-
-
-
-
-
-    // Test platfrom
-
-
-
 
     useEffect(() => {
       if(animation === "botAnimationUpDown"){
@@ -141,13 +116,6 @@ function Bot() {
         }, 3000);
       }
     }, [animation])
-
-
-
-
-
-
-
 
   return (
     <div className="botContainer">
