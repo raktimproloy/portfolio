@@ -83,13 +83,18 @@ export function GoingSection(section, question){
         const randomIndexTwo = Math.floor(Math.random() * questionReply.length)
         let text = ""
 
+        
+    
+    if(question === "question"){
+        text = `Yes sir, do you want to go ${section} section.`
+    }else{
         switch(section) {
             case "about":
                 text = about[randomIndex]
-              break;
+                break;
             case "service":
-              text = service[randomIndex]
-              break;
+                text = service[randomIndex]
+                break;
             case "skills" || "skill":
                 text = skills[randomIndex]
                 break;
@@ -107,10 +112,7 @@ export function GoingSection(section, question){
                 break;
             default:
                 text = "The section I can Identify"
-          }
-    
-    if(question){
-        text = questionReply[randomIndexTwo] + text
+            }
     }
 
     return text

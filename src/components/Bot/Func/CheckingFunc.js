@@ -162,3 +162,17 @@ export function VisittingNow(sentence) {
     };
   }
   
+  export function PositiveReply(sentence) {
+    // Remove leading/trailing white spaces
+    sentence = sentence.trim();
+  
+    // Check if the sentence starts with typical question words
+    var affermativeWord = ['yea', 'yes', 'sure', 'Yeah', 'Indeed', 'Absolutely', 'Certainly', 'Affirmative', 'Yup', 'Of course', 'Definitely', 'Agreed', 'Absolutely', 'Certainly', 'Undoubtedly', 'For sure', 'Sure thing', 'You bet', 'Without a doubt', 'No doubt', 'Positively', 'For certain', 'Right on'];
+    for (var i = 0; i < affermativeWord.length; i++) {
+      if (sentence.toLowerCase().startsWith(affermativeWord[i])) {
+        return true;
+      }
+    }
+  
+    return false;
+  }
