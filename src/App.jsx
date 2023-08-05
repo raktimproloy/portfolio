@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       {routes}
-      <Bot />
+      {/* <Bot /> */}
       <Outlet /> {/* Render nested routes */}
     </>
   );
