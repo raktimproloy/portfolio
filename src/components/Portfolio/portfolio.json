@@ -1,9 +1,101 @@
 {
     "data": [
         {
+            "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1740905711/Screenshot_12_srr7kw.png",
+            "title": "Trakking Trails",
+            "description": "This website allows users to purchase flight tickets and book tours, with a complete booking process for flight tickets integrated into the platform.",
+            "details":"This website allows you to purchase flight tickets and book tours. You can search for flights, sort results based on various criteria, and complete the entire booking process. All information will be sent to your email. You can manage passenger details, add your visa and passport information to help design the best flight options, and make payments via Stripe, Bikash, or bank transfer. The admin panel handles all aspects of these services.",
+            "video":"",
+            "difficulties":[
+                "Handle large data",
+                "Manage data from multiple flight companies",
+                "Display popular search results based on user queries",
+                "Manage the full purchase flow"
+              ],
+            "createdBy": ["Next.js", "Bootstrap", "NextAPI", "MySQL", "Stripe"],
+            "github": "",
+            "live": "https://ttbd.com.bd/"
+        },
+        {
+            "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1740905607/Screenshot_11_clhzgb.png",
+            "title": "SASS Project",
+            "description": "This fully dynamic site lets you update the navbar, content, pages, and blogs via the admin panel, with SEO-friendly pages to boost search engine rankings.",
+            "details":"This fully dynamic website allows the admin to update all content, including sliders, services, metadata, and the navbar. New pages can be added and custom designs created via the admin panel. All data is SEO-friendly, with every HTML tag visible in the page source.",
+            "video":"",
+            "difficulties":[
+                "Dynamic navbar",
+                "Add new pages with structure from the database",
+                "Ensure added data is SEO-friendly",
+                "Handle dynamic metadata"
+              ],
+            "createdBy": ["Next.js", "Bootstrap", "Node.js", "Express.js", "MongoDB"],
+            "github": "",
+            "live": "https://next-cms-theta-seven.vercel.app/"
+        },
+        {
+            "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1740905606/Screenshot_10_brunq9.png",
+            "title": "SASS Project Admin",
+            "description": "This admin panel allows real-time management of the website’s content, navbar, pages, and blogs.",
+            "details":"This admin panel manages a dynamic SaaS website, allowing users to create and design pages with drag-and-drop. It includes role management, navbar control, metadata handling, and real-time updates to the main site.",
+            "video":"",
+            "difficulties":[
+                "Drag & drop navbar management",
+                "Drag & drop page design",
+                "Create custom pages",
+                "Role management",
+                "Manage metadata for all pages"
+              ],
+            "createdBy": ["React.js", "Bootstrap", "Node.js", "Express.js", "MongoDB"],
+            "github": "",
+            "live": "https://next-cms-adm.vercel.app/"
+        },
+        {
+            "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1740913452/Screenshot_13_myxlyv.png",
+            "title": "Encrypted Video & PDF Site",
+            "description": "This website supports encrypted videos and PDF files, preventing viewers from downloading videos, PDFs, and images.",
+            "details":"I learned how to encrypt videos and prevent the downloading of videos and PDFs. My main goal was to block IDM and Snaptube downloads, and I successfully achieved that. I also disabled right-click on the website and attempted to block the inspect option.",
+            "video":"",
+            "difficulties":[
+                "Encrypted video",
+                "Encrypted PDF files",
+                "Blocked inspect option"
+              ],
+            "createdBy": ["PHP", "OpenSSL", "JavaScript"],
+            "github": "",
+            "live": "https://raktim-test.xyz/"
+        },
+        {
+            "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1740914691/Screenshot_14_oei9dt.png",
+            "title": "Clone Website(Alphamark)",
+            "description": "This is a website clone project. I cloned a website, but the design has some glitches.",
+            "details":"",
+            "video":"",
+            "difficulties":["text color auto change when get backgroud color black"],
+            "createdBy": ["React.js", "Tailwind"],
+            "github": "https://github.com/raktimproloy/alphamark",
+            "live": "https://alphamark-tau.vercel.app/"
+        },
+        {
+            "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1740981910/Screenshot_15_tth7wu.png",
+            "title": "AI Assist Portfolio",
+            "description": "I built a portfolio website featuring an AI assistant. This AI can interact with users by visiting the portfolio site and engaging in conversation.",
+            "details":"Users can talk to the bot, which can show any section of the portfolio and provide a brief description (e.g., 'Tell me about him'). The bot can also open the Facebook profile when requested (e.g., 'I want to see his Facebook ID'). The bot automatically detects when you're finished speaking and then proceeds with the requested action.",
+            "video":"",
+            "difficulties":[
+                "Detect when the user finishes speaking",
+                "Handle components through the bot"
+              ],
+            "createdBy": ["React.js", "Tailwind", "Node.js", "Express.js"],
+            "github": "https://github.com/raktimproloy/ai-portfolio",
+            "live": "https://portfolio-assistance.vercel.app/"
+        }, 
+        {
             "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1690085661/screencapture-blog-desk-fe-onrender-2023-07-23-09_45_42_o15wds.png",
             "title": "Blog Desk",
             "description": "Built a deceptive blog website using the MERN stack, exploiting its functionalities to achieve dishonest results.",
+            "details":"I built a deceptive blog website using the MERN stack, leveraging its features to achieve misleading or dishonest outcomes.",
+            "video":"",
+            "difficulties":"",
             "createdBy": ["React.js", "Tailwind", "Node.js", "Express.js", "MongoDB"],
             "github": "https://github.com/raktimproloy/blog-desk-frontend.git",
             "live": "https://blog-desk-fe.onrender.com/"
@@ -12,6 +104,9 @@
             "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1690087607/screencapture-127-0-0-1-5500-2023-07-23-10_46_28_bppgxw.png",
             "title": "Hit the ball",
             "description": "Crafted an engaging multiplayer game with HTML, CSS, and JS, delivering an interactive gaming experience for players to enjoy together in real-time.",
+            "details":" crafted an engaging multiplayer game using HTML, CSS, and JavaScript, providing an interactive gaming experience where players can join and compete with each other in real-time. The game is designed to be dynamic and responsive, offering smooth gameplay with real-time updates, allowing users to enjoy a fun and competitive environment together.",
+            "video":"",
+            "difficulties":["ditect ball movement", "make realtime movement", "add multiplayer functionality"],
             "createdBy": ["HTML", "CSS", "Bootstrap", "JavaScript"],
             "github": "https://github.com/raktimproloy/hit-the-ball.git",
             "live": "https://raktimproloy.github.io/hit-the-ball/"
@@ -20,6 +115,9 @@
             "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1690088116/screencapture-localhost-3000-2023-07-23-10_51_26_1_wpv0ik.png",
             "title": "Portfolio Website",
             "description": "Unique portfolio using Next.js, TypeScript, Tailwind CSS, and raw CSS, featuring creative design to showcase personal achievements and skills.",
+            "details":"I developed a unique portfolio website using Next.js, TypeScript, Tailwind CSS, and raw CSS. The portfolio features a creative and modern design to effectively showcase personal achievements, skills, and projects, offering an engaging experience for visitors.",
+            "video":"",
+            "difficulties":["scroll handle", "position handle"],
             "createdBy": ["Next.js", "CSS", "Tailwind", "TypeScript"],
             "github": "https://github.com/raktimproloy/portfolio-fe.git",
             "live": "https://portfolio-fe-alpha.vercel.app/"

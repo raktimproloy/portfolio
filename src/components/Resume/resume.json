@@ -8,6 +8,15 @@
             "startTime": "2022",
             "endTime": "2022",
             "work": ["JAVASCRIPT", "React", "Typescript"]
+        },
+        {
+            "name": "NextCTL",
+            "description":"It offers companies experienced tech professionals and end-to-end product development services.",
+            "location": "Dhaka, Bangladesh",
+            "position": "Full Stack Developer",
+            "startTime": "2023",
+            "endTime": "2024",
+            "work": ["NextJS", "ReactJS", "NodeJS", "MongoDB", "MySQL"]
         }
     ]
 }

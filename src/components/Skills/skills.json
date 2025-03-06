@@ -1,5 +1,5 @@
 {
-    "data":[
+    "Frontend": [
         {
             "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252478/portfolio/icons/html_xdrs9d.svg",
             "title": "HTML",
@@ -11,33 +11,95 @@
             "description": "CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts."
         },
         {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1741262608/icons8-tailwindcss-480_xgu4iu.png",
+            "title": "Tailwind CSS",
+            "description": "CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1741262668/icons8-bootstrap-240_ezyd8p.png",
+            "title": "Bootstrap",
+            "description": "CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts."
+        },
+        {
             "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252480/portfolio/icons/javascript_tsjbnz.svg",
-            "title": "Javascript",
+            "title": "JavaScript",
             "description": "JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions."
         },
         {
             "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252483/portfolio/icons/react_o0fpvr.svg",
             "title": "React JS",
             "description": "React.js, more commonly known as React, is a free, open-source JavaScript library. It works best to build user interfaces."
-        },{
+        },
+        {
             "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252482/portfolio/icons/nextjs_tqycq2.svg",
             "title": "Next JS",
             "description": "Next.js is a React framework that gives you building blocks to create web applications."
-        },
+        }
+    ],
+    "Backend": [
         {
             "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252482/portfolio/icons/nodejs_slpowz.svg",
             "title": "Node JS",
-            "description": "Node.js (Node) is an open source, cross-platform runtime environment for executing JavaScript code."
+            "description": "Node.js (Node) is an open-source, cross-platform runtime environment for executing JavaScript code."
         },
         {
             "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252472/portfolio/icons/express-js_owybym.svg",
             "title": "Express JS",
-            "description": "Express is a node js web application framework that provides broad features for building web and mobile applications."
+            "description": "Express is a Node.js web application framework that provides broad features for building web and mobile applications."
         },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1741262770/icons8-php-480_i0nqts.png",
+            "title": "PHP",
+            "description": "CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1741262858/icons8-laravel-96_spttl4.png",
+            "title": "Laravel",
+            "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1741262902/icons8-python-480_bjl7al.png",
+            "title": "Python",
+            "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development."
+        }
+    ],
+    "Database": [
         {
             "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1685252482/portfolio/icons/mongodb_xkaoz9.svg",
             "title": "MongoDB",
             "description": "MongoDB is a non-relational document database that provides support for JSON-like storage."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1741262958/icons8-mysql-240_tzu65b.png",
+            "title": "MySQL",
+            "description": "Linux is a family of open-source Unix-like operating systems based on the Linux kernel."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1741263010/icons8-sqlite-250_blsg5h.png",
+            "title": "SQLite",
+            "description": "Linux is a family of open-source Unix-like operating systems based on the Linux kernel."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1741263009/icons8-firebase-480_p3hbd5.png",
+            "title": "Firebase",
+            "description": "Windows is a group of several proprietary graphical operating system families developed by Microsoft."
+        }
+    ],
+    "Other": [
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1741263163/icons8-git-480_l5qb8l.png",
+            "title": "Git",
+            "description": "Git is a free and open-source distributed version control system designed to handle everything from small to large projects."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1741263163/icons8-docker-480_ljs96v.png",
+            "title": "Docker",
+            "description": "Docker is an open platform for developing, shipping, and running applications in containers."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1741263162/icons8-debian-96_nkyq72.png",
+            "title": "Dabian",
+            "description": "Docker is an open platform for developing, shipping, and running applications in containers."
         }
     ]
 }

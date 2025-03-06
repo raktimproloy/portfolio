@@ -29,6 +29,11 @@
             "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1687187448/portfolio/icons/seo_zq8czz.svg",
             "title": "SEO",
             "description": "SEO optimizes websites to improve their visibility and ranking on search engines, driving organic traffic and increasing online presence."
+        },
+        {
+            "logo": "https://res.cloudinary.com/dcbantk1f/image/upload/v1741262217/flat-design-icon-of-encryption-vector-removebg-preview_dqtdlz.png",
+            "title": "Video Encryption",
+            "description": "Video encryption is the process of securing video files to prevent unauthorized access, ensuring that only authorized users can view the content."
         }
     ]
 }

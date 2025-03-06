@@ -89,3 +89,49 @@
 @media only screen and (max-width: 425px) {
     
 }
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tabButton {
+    background: #222;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.tabButton.active {
+    background: crimson;
+    font-weight: bold;
+}
+
+.tabButton:hover {
+    background: #444;
+}
+
+.skillItems {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .skillItems {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .skillItems {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
