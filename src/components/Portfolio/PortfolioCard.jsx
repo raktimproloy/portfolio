@@ -80,9 +80,14 @@ function PortfolioCard({ portfolio }) {
                 <a href={portfolio.live} target="_blank" rel="noopener noreferrer">
                   See Live
                 </a>
-                <a href={portfolio.github} target="_blank" rel="noopener noreferrer">
-                  GitHub
-                </a>
+                {
+                  portfolio.github && portfolio.github.length > 0 ?
+                    <a href={portfolio.github} target="_blank" rel="noopener noreferrer">
+                      GitHub
+                    </a>
+                  :
+                  ""
+                }
               </div>
             </div>
           </div>
