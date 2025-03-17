@@ -65,6 +65,36 @@
             "live": "https://raktim-test.xyz/"
         },
         {
+            "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1742183565/Screenshot_22_plseuj.png",
+            "title": "ReHostX Subscription Website",
+            "description": "A subscription-based, fully SEO-friendly website where users can manage their subscriptions efficiently.",
+            "details": "This platform allows users to subscribe to services with ease, offering a seamless and secure experience. It is optimized for search engines and built with scalability in mind.",
+            "video": "",
+            "difficulties": [
+                "Subscription management",
+                "SEO optimization",
+                "Cashier package handle"
+            ],
+            "createdBy": ["Laravel", "React", "MySQL", "Cashier"],
+            "github": "https://github.com/raktimproloy/url-activator",
+            "live": "http://main.raktim-test.xyz/"
+        },        
+        {
+            "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1742183565/Screenshot_23_v3tm0q.png",
+            "title": "ReHostX Admin",
+            "description": "The admin panel for managing subscriptions, users, and website settings in a secure and SEO-friendly environment.",
+            "details": "This admin panel allows full control over user subscriptions, payments, and content security. Admins can manage encrypted videos, monitor user activities, and enforce security measures like preventing downloads and blocking inspection tools.",
+            "video": "",
+            "difficulties": [
+                "Subscription management",
+                "User & payment control",
+                "Advanced security measures"
+            ],
+            "createdBy": ["Laravel", "Blade", "MySQL"],
+            "github": "https://github.com/raktimproloy/url_activator_amd",
+            "live": "http://adm.raktim-test.xyz"
+        },        
+        {
             "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1740914691/Screenshot_14_oei9dt.png",
             "title": "Clone Website(Alphamark)",
             "description": "This is a website clone project. I cloned a website, but the design has some glitches.",

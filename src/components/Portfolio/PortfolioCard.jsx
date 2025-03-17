@@ -45,10 +45,11 @@ function PortfolioCard({ portfolio }) {
               &times;
             </button>
             <div className="modalContent">
-              <video controls className="modalVideo">
+              {/* <video controls className="modalVideo">
                 <source src={portfolio.video} type="video/mp4" />
                 Your browser does not support the video tag.
-              </video>
+              </video> */}
+              <img src={portfolio.image} alt="" className="modalVideo" />
               <div className="modalTechnologies">
                 <h3>Technologies Used:</h3>
                 <ul>
