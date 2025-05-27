@@ -62,7 +62,7 @@
               ],
             "createdBy": ["PHP", "OpenSSL", "JavaScript"],
             "github": "",
-            "live": "https://encrypt.sudipto-dev.xyz/"
+            "live": "https://raktim-test.xyz/"
         },
         {
             "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1742183565/Screenshot_22_plseuj.png",
@@ -77,7 +77,22 @@
             ],
             "createdBy": ["Laravel", "React", "MySQL", "Cashier"],
             "github": "https://github.com/raktimproloy/url-activator",
-            "live": "https://rehostx.sudipto-dev.xyz/"
+            "live": "http://main.raktim-test.xyz/"
+        },        
+        {
+            "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1742183565/Screenshot_23_v3tm0q.png",
+            "title": "ReHostX Admin",
+            "description": "The admin panel for managing subscriptions, users, and website settings in a secure and SEO-friendly environment.",
+            "details": "This admin panel allows full control over user subscriptions, payments, and content security. Admins can manage encrypted videos, monitor user activities, and enforce security measures like preventing downloads and blocking inspection tools.",
+            "video": "",
+            "difficulties": [
+                "Subscription management",
+                "User & payment control",
+                "Advanced security measures"
+            ],
+            "createdBy": ["Laravel", "Blade", "MySQL"],
+            "github": "https://github.com/raktimproloy/url_activator_amd",
+            "live": "http://adm.raktim-test.xyz"
         },        
         {
             "image": "https://res.cloudinary.com/dcbantk1f/image/upload/v1740914691/Screenshot_14_oei9dt.png",
